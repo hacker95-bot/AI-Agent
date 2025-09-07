@@ -17,6 +17,7 @@ Minimal prototype of a Retrieval-Augmented Generation (RAG) chatbot for WhatsApp
    ```bash
    ./scripts/run_local.sh
    ```
+ 
 5. (Optional) Expose the server to the internet with [ngrok](https://ngrok.com/)
    1. Install and authenticate ngrok (`ngrok config add-authtoken <token>`)
    2. Start the server and tunnel
