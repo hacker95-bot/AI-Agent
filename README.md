@@ -17,7 +17,14 @@ Minimal prototype of a Retrieval-Augmented Generation (RAG) chatbot for WhatsApp
    ```bash
    ./scripts/run_local.sh
    ```
-5. Configure your WhatsApp Cloud API app to point to `http://<host>:8000/wa/webhook`.
+ 
+5. (Optional) Expose the server to the internet with [ngrok](https://ngrok.com/)
+   1. Install and authenticate ngrok (`ngrok config add-authtoken <token>`)
+   2. Start the server and tunnel
+      ```bash
+      ./scripts/run_ngrok.sh
+      ```
+   3. Copy the HTTPS "Forwarding" URL printed by ngrok and configure your WhatsApp Cloud API app to use `<forwarding-url>/wa/webhook`.
 
 ## Testing
 
